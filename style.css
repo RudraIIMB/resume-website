@@ -1,0 +1,208 @@
+/* Colours used on this site:
+   dark teal  #0E3B43  (nav bar, top section, footer)
+   teal       #1F7A7A  (headings, links, cards)
+   light mint #E4F1EF  (skills section background)
+   gold       #E3A72F  (buttons and highlights)
+   text       #222222
+*/
+
+/* ----- Element selectors ----- */
+body {
+  margin: 0;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 17px;
+  line-height: 1.6;
+  color: #222222;
+  background-color: #F7FAF9;
+}
+
+h1, h2, h3 {
+  font-family: "Poppins", Arial, sans-serif;
+  margin: 0 0 10px 0;
+}
+
+h2 {
+  color: #1F7A7A;
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+a {
+  color: #1F7A7A;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* ----- Navigation bar (ID selector + flexbox) ----- */
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0E3B43;
+  padding: 15px 30px;
+  position: sticky;   /* stays at the top when scrolling */
+  top: 0;
+}
+
+.logo {
+  color: white;
+  font-family: "Poppins", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.menu {
+  display: flex;
+  gap: 20px;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+}
+
+.menu a:hover {
+  color: #E3A72F;
+}
+
+/* ----- Top section ----- */
+#hero {
+  background-color: #0E3B43;
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+#hero h1 {
+  font-size: 48px;
+}
+
+.small-text {
+  font-size: 14px;
+  color: #E3A72F;
+  font-weight: 600;
+}
+
+.button {
+  display: inline-block;
+  background-color: #E3A72F;
+  color: #222222;
+  padding: 10px 25px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.button:hover {
+  background-color: white;
+}
+
+/* ----- Sections ----- */
+.section {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 50px 20px;
+}
+
+/* ----- Education ----- */
+.edu {
+  border-left: 4px solid #E3A72F;
+  padding-left: 15px;
+  margin-bottom: 20px;
+}
+
+.edu p {
+  margin: 0;
+}
+
+/* ----- Experience cards ----- */
+.cards {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  flex: 1;
+  min-width: 250px;
+  background-color: white;
+  padding: 20px;
+  border-top: 4px solid #1F7A7A;
+  border-radius: 8px;
+}
+
+.card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card .small-text {
+  color: #1F7A7A;
+  margin: 0 0 10px 0;
+}
+
+/* ----- Skills ----- */
+#skills {
+  max-width: none;
+  background-color: #E4F1EF;
+  text-align: center;
+}
+
+.skills {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.skills li {
+  padding: 8px 20px;
+  border-radius: 25px;
+}
+
+.creative {
+  background-color: #1F7A7A;
+  color: white;
+}
+
+.business {
+  background-color: #E3A72F;
+  color: #222222;
+}
+
+/* ----- Footer ----- */
+footer {
+  background-color: #0E3B43;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* ----- Small screens ----- */
+@media (max-width: 600px) {
+  #navbar {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .menu {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #hero h1 {
+    font-size: 34px;
+  }
+}
